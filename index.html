@@ -68,7 +68,7 @@
         <div class="subheading mb-5">405 Serrano Drive · San Francisco, CA 94132 · (510) 557-2878 ·
           <a href="mailto:name@email.com">rajan.patil.r@gmail.com</a>
         </div>
-        <p class="lead mb-5">Currently, I am working as a Front-end Developer at Golden Gate University in San Francisco. I have 3+ years of experience in producing high quality <b>responsive websites</b>b> and exceptional user interface for web applications using frontend technologies including <b>JavaScript, CSS3, HTML5</b> and <b>Bootstrap</b>. I hold a Master’s degree in Computer Science and I have strong knowledge and experience in <b>ES6, ReactJs, Redux, NodeJs, AngularJs</b> and other popular JavaScript and CSS frameworks and libraries</p>
+        <p class="lead mb-5">I am a Front-end Web Developer from San Francisco, California. I have more than 3 years of experience in producing high quality <b>responsive websites</b> and exceptional user interface for web applications using frontend technologies including <b>JavaScript, CSS3, HTML5</b> and <b>Bootstrap</b>. I hold a Master’s degree in Computer Science. In addition to that, I have strong knowledge as well as hands-on experience in <b>ES6, ReactJs, Redux, NodeJs, AngularJs</b> and other popular JavaScript and CSS frameworks and libraries</p>
         <div class="social-icons">
           <a href="#">
             <i class="fab fa-linkedin-in"></i>
@@ -152,21 +152,18 @@
           <h2 class="mb-5">Portfolio</h2>
           <div class="portfolio-container d-flex flex-row">
             <div class="cell-container p-2">
-              <img class="image" src="http://www.bigart.design/images/other/stephanie-mccabe-24620-600x600.jpg">
-              <a class="overlay" data-toggle="modal" data-target="#rweatherModal">
-                <div class="text">
-                  <p class="title">Firework</p>
-                  <div class="divider">
-                  </div>
-                  <p class="sub-title">Stefanie McCabe</p>
-                </div>
-              </a>
-            </div>
-            <div class="cell-container p-2">
-              <img class="image" src="http://www.bigart.design/images/other/stephanie-mccabe-24620-600x600.jpg">
+              <img class="image" src="/img/portfolio/rauth_thumbnail.PNG">
               <a class="overlay" data-toggle="modal" data-target="#rauthModal">
                 <div class="text">
-                  <p class="title">Firework</p>
+                  <p class="title">RAuth</p>
+                </div>
+              </a>
+            </div>
+            <div class="cell-container p-2">
+              <img class="image" src="./img/portfolio/rnews.png" width="600" height="600">
+              <a class="overlay" data-toggle="modal" data-target="#rnewsModal">
+                <div class="text">
+                  <p class="title">RNews</p>
                   <div class="divider">
                   </div>
                   <p class="sub-title">Stefanie McCabe</p>
@@ -175,9 +172,9 @@
             </div>
             <div class="cell-container p-2">
               <img class="image" src="http://www.bigart.design/images/other/stephanie-mccabe-24620-600x600.jpg">
-              <a class="overlay" data-toggle="modal" data-target="#phoneSpecModal">
+              <a class="overlay" data-toggle="modal" data-target="#rweatherappModal">
                 <div class="text">
-                  <p class="title">Firework</p>
+                  <p class="title">RWeatherApp</p>
                   <div class="divider">
                   </div>
                   <p class="sub-title">Stefanie McCabe</p>
@@ -331,8 +328,8 @@
       <div class="modal-content">
         <div class="modal-header">
           <div>
-            <h2 id="myModalLabel" class="modal-title">
-              RAuth
+            <h2 class="modal-title">
+              RAuth Client
             </h2>
             <div class="subheading">An User Authentication Application</div>
           </div>
@@ -348,14 +345,14 @@
                   <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                 </ol>
                 <div class="carousel-inner">
-                  <div class="carousel-item active p-5">
-                    <img class="d-block w-75 mx-auto" src="img/portfolio/rauth1.png" alt="First slide">
+                  <div class="carousel-item active p-3">
+                    <img class="d-block w-50 mx-auto" src="img/portfolio/rauth1.png" alt="First slide">
                   </div>
-                  <div class="carousel-item p-5">
-                    <img class="d-block w-75 mx-auto" src="img/portfolio/rweatherapp.png" alt="Second slide">
+                  <div class="carousel-item p-3">
+                    <img class="d-block w-50 mx-auto" src="img/portfolio/rweatherapp.png" alt="Second slide">
                   </div>
-                  <div class="carousel-item p-5">
-                    <img class="d-block w-75 mx-auto" src="img/portfolio/phonespecapp1.png" alt="Third slide">
+                  <div class="carousel-item p-3">
+                    <img class="d-block w-50 mx-auto" src="img/portfolio/phonespecapp1.png" alt="Third slide">
                   </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -371,20 +368,18 @@
             <div class="col-lg-6 col-sm-12">
               <div class="porftolio-description">
                 <h5 class="porftolio-description-title">Overview</h5>
-                <p>The RAuth Application is an User Authentication Application built using the MEAN Stack Technologies. The application</p>
+                <p>RAuthApp API is a REST API for token based user authentication built using most common MEAN architecture of having Node, Express and MongoDB. The client side of this API is an Angular single-page application, which is capable of accessing all authentication services. The RAuthApp API</p>
                 <ol>
                   <li>Allows a user to register.</li>
-                  <li>Saves the user data in MonboDB, password is encrypted before storing.</li>
-                  <li>Let a returning user log in.</li>
-                  <li>Keep a logged in user’s session alive between page visits.</li>
-                  <li>Provide authorized access to Home and Profile pages, and prevents any unauthorized access to these pages.</li>
-                  <li>Change the User Interface depending on logged in status (e.g. a “login” button or a “my profile” button).</li>
-                  <li>Allow a valid user to restore the password securely.</li>
+                  <li>Saves the user data in MonboDB (password is encrypted before storing).</li>
+                  <li>Lets a returning user log in.</li>
+                  <li>Keeps a logged in user’s session alive between page visits.</li>
+                  <li>Provides authorized access to Home and Profile pages, and prevents any unauthorized access to these pages.</li>
+                  <li>Allows a valid user to restore the password securely.</li>
                 </ol>
-                <p> The basic architecture of the RAuth Application have an Angular Single-Page App using a REST API built with Node, Express and MongoDB. This application supports following features:</p>
 
                 <div class="technologies">
-                  <h5 class="porftolio-description">Technologies Used</h5>
+                  <h5 class="porftolio-description-title">Technologies Used</h5>
                   <ul class="list-inline dev-icons">
                     <li class="list-inline-item" data-toggle="tooltip" title="HTML5">
                       <i class="fab fa-html5"></i>
@@ -407,6 +402,12 @@
                     <li class="list-inline-item" data-toggle="tooltip" title="Less">
                       <i class="fab fa-less"></i>
                     </li>
+                    <li class="list-inline-item" data-toggle="tooltip" title="MongoDB">
+                      <i class="icon-mongodb"></i>
+                    </li>
+                    <li class="list-inline-item" data-toggle="tooltip" title="Heroku">
+                      <i class="icon-heroku"></i>
+                    </li>
                     <li class="list-inline-item" data-toggle="tooltip" title="Git">
                       <i class="fab fa-git"></i>
                     </li>
@@ -419,18 +420,14 @@
                     <li class="list-inline-item" data-toggle="tooltip" title="NPM">
                       <i class="fab fa-npm"></i>
                     </li>
-                    <li class="list-inline-item" data-toggle="tooltip" title="MongoDB">
-                      <i class="icon-mongodb"></i>
-                    </li>
-                    <li class="list-inline-item" data-toggle="tooltip" title="Heroku">
-                      <i class="icon-heroku"></i>
-                    </li>
                   </ul>
                 </div>
 
-                <h5 class="porftolio-description">URL</h5>
-                <a href="https://rauth.herokuapp.com" target="_blank">https://rauth.herokuapp.com</a>
-
+                <div class="portfolio-urls">
+                  <h5 class="porftolio-description-title">URLs:</h5>
+                  <a href="https://rauth.herokuapp.com" target="_blank">RAuth Client Application</a><br>
+                  <a href="https://rauth.herokuapp.com/docs" target="_blank">RAuth API Documentation</a>
+                </div>
               </div>
             </div>
           </div>
@@ -439,16 +436,21 @@
     </div>
   </div>
 
-
-  <div id="rweatherModal" class="modal animated bounceIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div id="rnewsModal" class="modal animated bounceIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 id="myModalLabel" class="modal-title">
-            RWeather Application
-          </h1>
+          <div>
+            <h2 id="myModalLabel" class="modal-title">
+              RNews
+            </h2>
+            <div class="subheading">
+              Up-to-date news coverage, aggregated from sources all over the world
+            </div>
+          </div>
           <button class="btn btn-secondary" data-dismiss="modal">X</button>
         </div>
+
         <div class="modal-body">
           <div class="row">
             <div class="col-lg-6 col-sm-12">
@@ -482,7 +484,10 @@
             <div class="col-lg-6 col-sm-12">
               <div class="porftolio-description">
                 <h3 class="text-center mt-5">RWeather Application</h3>
+                <p>Get and search live headlines, articles, images, and other article from various sources around the world</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in aliquet nisl. Praesent sed leo congue, fringilla eros eu, tempus metus. Nam mollis odio ipsum, non vehicula ipsum accumsan sodales. Morbi varius vitae elit euismod cursus. Donec a dapibus justo, in facilisis nisi. Suspendisse ut turpis dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui risus, tincidunt at odio ut, ultrices dignissim ipsum. Cras ultrices erat nec leo luctus varius. Nulla sollicitudin tincidunt nulla, ut porta mauris volutpat vitae. Suspendisse ornare dolor sit amet massa venenatis pulvinar.</p>
+                <h5 class="porftolio-description">Client Application URL:</h5>
+                <a href="https://rnews-a4ef4.firebaseapp.com" target="_blank">https://rnews-a4ef4.firebaseapp.com</a>
               </div>
             </div>
           </div>
@@ -491,13 +496,16 @@
     </div>
   </div>
 
-  <div id="phoneSpecModal" class="modal animated bounceIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div id="rweatherappModal" class="modal animated bounceIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 id="myModalLabel" class="modal-title">
-            phoneSpec Application
-          </h1>
+          <div>
+            <h2 class="modal-title">
+              RWeatherApp
+            </h2>
+            <div class="subheading">Get accurate, local and detailed weather forecast.</div>
+          </div>
           <button class="btn btn-secondary" data-dismiss="modal">X</button>
         </div>
         <div class="modal-body">
@@ -510,14 +518,14 @@
                   <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                 </ol>
                 <div class="carousel-inner">
-                  <div class="carousel-item p-5">
-                    <img class="d-block w-75 mx-auto" src="img/portfolio/phonespecapp1.png" alt="Third slide">
+                  <div class="carousel-item active p-3">
+                    <img class="d-block w-50 mx-auto" src="img/portfolio/rauth1.png" alt="First slide">
                   </div>
-                  <div class="carousel-item active p-5">
-                    <img class="d-block w-75 mx-auto" src="img/portfolio/rauth1.png" alt="First slide">
+                  <div class="carousel-item p-3">
+                    <img class="d-block w-50 mx-auto" src="img/portfolio/rweatherapp.png" alt="Second slide">
                   </div>
-                  <div class="carousel-item p-5">
-                    <img class="d-block w-75 mx-auto" src="img/portfolio/rweatherapp.png" alt="Second slide">
+                  <div class="carousel-item p-3">
+                    <img class="d-block w-50 mx-auto" src="img/portfolio/phonespecapp1.png" alt="Third slide">
                   </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -532,8 +540,59 @@
             </div>
             <div class="col-lg-6 col-sm-12">
               <div class="porftolio-description">
-                <h3 class="text-center mt-5">phoneSpec Application</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in aliquet nisl. Praesent sed leo congue, fringilla eros eu, tempus metus. Nam mollis odio ipsum, non vehicula ipsum accumsan sodales. Morbi varius vitae elit euismod cursus. Donec a dapibus justo, in facilisis nisi. Suspendisse ut turpis dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui risus, tincidunt at odio ut, ultrices dignissim ipsum. Cras ultrices erat nec leo luctus varius. Nulla sollicitudin tincidunt nulla, ut porta mauris volutpat vitae. Suspendisse ornare dolor sit amet massa venenatis pulvinar.</p>
+                <h5 class="porftolio-description-title">Overview</h5>
+                <p>RWeatherApp is a simple single page Progressive Web Application(PWA) that provides accurate and detailed weather forecast, available at any location or city in the world. The RWeatherApp is built with PWA methodology using AngularJS, JavaScript, HTML5, CSS3 and Bootstrap to deliver fast, engaging, and reliable mobile web experiences even when the user is offline or on an unreliable network.</p>
+                <ol>
+                  <li>Accurate, local and detailed weather data.</li>
+                  <li>5 day forecast with weather data for every 3 hours.</li>
+                  <li>Search weather information by city name.</li>
+                  <li>Graphical display of temperatures.</li>
+                </ol>
+
+                <div class="technologies">
+                  <h5 class="porftolio-description-title">Technologies Used</h5>
+                  <ul class="list-inline dev-icons">
+                    <li class="list-inline-item" data-toggle="tooltip" title="HTML5">
+                      <i class="fab fa-html5"></i>
+                    </li>
+                    <li class="list-inline-item" data-toggle="tooltip" title="CSS3">
+                      <i class="fab fa-css3-alt"></i>
+                    </li>
+                    <li class="list-inline-item" data-toggle="tooltip" title="JavaScript">
+                      <i class="fab fa-js-square"></i>
+                    </li>
+                    <li class="list-inline-item" data-toggle="tooltip" title="AngularJS">
+                      <i class="fab fa-angular"></i>
+                    </li>
+                    <li class="list-inline-item" data-toggle="tooltip" title="Bootstrap">
+                      <i class="fab fa-bootstrap"></i>
+                    </li>
+                    <li class="list-inline-item" data-toggle="tooltip" title="Less">
+                      <i class="fab fa-less"></i>
+                    </li>
+                    <li class="list-inline-item" data-toggle="tooltip" title="Heroku">
+                      <i class="icon-heroku"></i>
+                    </li>
+                    <li class="list-inline-item" data-toggle="tooltip" title="Git">
+                      <i class="fab fa-git"></i>
+                    </li>
+                    <li class="list-inline-item" data-toggle="tooltip" title="GitHub">
+                      <i class="fab fa-github"></i>
+                    </li>
+                    <li class="list-inline-item" data-toggle="tooltip" title="Grunt">
+                      <i class="fab fa-grunt"></i>
+                    </li>
+                    <li class="list-inline-item" data-toggle="tooltip" title="NPM">
+                      <i class="fab fa-npm"></i>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="portfolio-urls">
+                  <h5 class="porftolio-description-title">URLs:</h5>
+                  <a href="https://rweatherapp.herokuapp.com" target="_blank">RWeatherApp Application</a><br>
+
+                </div>
               </div>
             </div>
           </div>
