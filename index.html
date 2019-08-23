@@ -19,6 +19,7 @@
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
   <!-- Custom styles for this template -->
   <link href="css/resume.css" rel="stylesheet">
+  <link href="css/portfolio.css" rel="stylesheet">
 
 </head>
 
@@ -151,33 +152,31 @@
         <div class="w-100">
           <h2 class="mb-5">Portfolio</h2>
           <div class="portfolio-container d-flex flex-row">
-            <div class="cell-container p-2">
-              <img class="image" src="/img/portfolio/rauth_thumbnail.PNG">
-              <a class="overlay" data-toggle="modal" data-target="#rauthModal">
+            <div id="reactjs" class="cell-container p-2">
+              <a class="overlay" href="/portfolio/react/index.html">
                 <div class="text">
-                  <p class="title">RAuth</p>
+                  <p class="title">ReactJs</p>
                 </div>
               </a>
             </div>
-            <div class="cell-container p-2">
-              <img class="image" src="./img/portfolio/rnews.png" width="600" height="600">
-              <a class="overlay" data-toggle="modal" data-target="#rnewsModal">
+            <div id="nodejs" class="cell-container p-2">
+              <a class="overlay" href="/portfolio/node/index.html">
                 <div class="text">
-                  <p class="title">RNews</p>
-                  <div class="divider">
-                  </div>
-                  <p class="sub-title">Stefanie McCabe</p>
+                  <p class="title">NodeJs/<br>ExpressJs</p>
                 </div>
               </a>
             </div>
-            <div class="cell-container p-2">
-              <img class="image" src="http://www.bigart.design/images/other/stephanie-mccabe-24620-600x600.jpg">
-              <a class="overlay" data-toggle="modal" data-target="#rweatherappModal">
+            <div id="html" class="cell-container p-2">
+              <a class="overlay" href="/portfolio/html/index.html">
                 <div class="text">
-                  <p class="title">RWeatherApp</p>
-                  <div class="divider">
-                  </div>
-                  <p class="sub-title">Stefanie McCabe</p>
+                  <p class="title">HTML5/<br>CSS3</p>
+                </div>
+              </a>
+            </div>
+            <div id="angular" class="cell-container p-2">
+              <a class="overlay" href="/portfolio/angular/index.html">
+                <div class="text">
+                  <p class="title">AngularJs</p>
                 </div>
               </a>
             </div>
@@ -321,287 +320,6 @@
     </section>-->
   </div>
 
-
-  <!-- modals -->
-  <div id="rauthModal" class="modal animated bounceIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <div>
-            <h2 class="modal-title">
-              RAuth Client
-            </h2>
-            <div class="subheading">An User Authentication Application</div>
-          </div>
-          <button class="btn btn-secondary" data-dismiss="modal">X</button>
-        </div>
-        <div class="modal-body">
-          <div class="row">
-            <div class="col-lg-6 col-sm-12">
-              <div id="rauthCarousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active p-3">
-                    <img class="d-block w-50 mx-auto" src="img/portfolio/rauth1.png" alt="First slide">
-                  </div>
-                  <div class="carousel-item p-3">
-                    <img class="d-block w-50 mx-auto" src="img/portfolio/rweatherapp.png" alt="Second slide">
-                  </div>
-                  <div class="carousel-item p-3">
-                    <img class="d-block w-50 mx-auto" src="img/portfolio/phonespecapp1.png" alt="Third slide">
-                  </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-6 col-sm-12">
-              <div class="porftolio-description">
-                <h5 class="porftolio-description-title">Overview</h5>
-                <p>RAuthApp API is a REST API for token based user authentication built using most common MEAN architecture of having Node, Express and MongoDB. The client side of this API is an Angular single-page application, which is capable of accessing all authentication services. The RAuthApp API</p>
-                <ol>
-                  <li>Allows a user to register.</li>
-                  <li>Saves the user data in MonboDB (password is encrypted before storing).</li>
-                  <li>Lets a returning user log in.</li>
-                  <li>Keeps a logged in user’s session alive between page visits.</li>
-                  <li>Provides authorized access to Home and Profile pages, and prevents any unauthorized access to these pages.</li>
-                  <li>Allows a valid user to restore the password securely.</li>
-                </ol>
-
-                <div class="technologies">
-                  <h5 class="porftolio-description-title">Technologies Used</h5>
-                  <ul class="list-inline dev-icons">
-                    <li class="list-inline-item" data-toggle="tooltip" title="HTML5">
-                      <i class="fab fa-html5"></i>
-                    </li>
-                    <li class="list-inline-item" data-toggle="tooltip" title="CSS3">
-                      <i class="fab fa-css3-alt"></i>
-                    </li>
-                    <li class="list-inline-item" data-toggle="tooltip" title="JavaScript">
-                      <i class="fab fa-js-square"></i>
-                    </li>
-                    <li class="list-inline-item" data-toggle="tooltip" title="AngularJS">
-                      <i class="fab fa-angular"></i>
-                    </li>
-                    <li class="list-inline-item" data-toggle="tooltip" title="NodeJS">
-                      <i class="fab fa-node-js"></i>
-                    </li>
-                    <li class="list-inline-item" data-toggle="tooltip" title="Bootstrap">
-                      <i class="fab fa-bootstrap"></i>
-                    </li>
-                    <li class="list-inline-item" data-toggle="tooltip" title="Less">
-                      <i class="fab fa-less"></i>
-                    </li>
-                    <li class="list-inline-item" data-toggle="tooltip" title="MongoDB">
-                      <i class="icon-mongodb"></i>
-                    </li>
-                    <li class="list-inline-item" data-toggle="tooltip" title="Heroku">
-                      <i class="icon-heroku"></i>
-                    </li>
-                    <li class="list-inline-item" data-toggle="tooltip" title="Git">
-                      <i class="fab fa-git"></i>
-                    </li>
-                    <li class="list-inline-item" data-toggle="tooltip" title="GitHub">
-                      <i class="fab fa-github"></i>
-                    </li>
-                    <li class="list-inline-item" data-toggle="tooltip" title="Grunt">
-                      <i class="fab fa-grunt"></i>
-                    </li>
-                    <li class="list-inline-item" data-toggle="tooltip" title="NPM">
-                      <i class="fab fa-npm"></i>
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="portfolio-urls">
-                  <h5 class="porftolio-description-title">URLs:</h5>
-                  <a href="https://rauth.herokuapp.com" target="_blank">RAuth Client Application</a><br>
-                  <a href="https://rauth.herokuapp.com/docs" target="_blank">RAuth API Documentation</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="rnewsModal" class="modal animated bounceIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <div>
-            <h2 id="myModalLabel" class="modal-title">
-              RNews
-            </h2>
-            <div class="subheading">
-              Up-to-date news coverage, aggregated from sources all over the world
-            </div>
-          </div>
-          <button class="btn btn-secondary" data-dismiss="modal">X</button>
-        </div>
-
-        <div class="modal-body">
-          <div class="row">
-            <div class="col-lg-6 col-sm-12">
-              <div id="rauthCarousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item p-5">
-                    <img class="d-block w-75 mx-auto" src="img/portfolio/rweatherapp.png" alt="Second slide">
-                  </div>
-                  <div class="carousel-item active p-5">
-                    <img class="d-block w-75 mx-auto" src="img/portfolio/rauth1.png" alt="First slide">
-                  </div>
-                  <div class="carousel-item p-5">
-                    <img class="d-block w-75 mx-auto" src="img/portfolio/phonespecapp1.png" alt="Third slide">
-                  </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-6 col-sm-12">
-              <div class="porftolio-description">
-                <h3 class="text-center mt-5">RWeather Application</h3>
-                <p>Get and search live headlines, articles, images, and other article from various sources around the world</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in aliquet nisl. Praesent sed leo congue, fringilla eros eu, tempus metus. Nam mollis odio ipsum, non vehicula ipsum accumsan sodales. Morbi varius vitae elit euismod cursus. Donec a dapibus justo, in facilisis nisi. Suspendisse ut turpis dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui risus, tincidunt at odio ut, ultrices dignissim ipsum. Cras ultrices erat nec leo luctus varius. Nulla sollicitudin tincidunt nulla, ut porta mauris volutpat vitae. Suspendisse ornare dolor sit amet massa venenatis pulvinar.</p>
-                <h5 class="porftolio-description">Client Application URL:</h5>
-                <a href="https://rnews-a4ef4.firebaseapp.com" target="_blank">https://rnews-a4ef4.firebaseapp.com</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="rweatherappModal" class="modal animated bounceIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <div>
-            <h2 class="modal-title">
-              RWeatherApp
-            </h2>
-            <div class="subheading">Get accurate, local and detailed weather forecast.</div>
-          </div>
-          <button class="btn btn-secondary" data-dismiss="modal">X</button>
-        </div>
-        <div class="modal-body">
-          <div class="row">
-            <div class="col-lg-6 col-sm-12">
-              <div id="rauthCarousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active p-3">
-                    <img class="d-block w-50 mx-auto" src="img/portfolio/rauth1.png" alt="First slide">
-                  </div>
-                  <div class="carousel-item p-3">
-                    <img class="d-block w-50 mx-auto" src="img/portfolio/rweatherapp.png" alt="Second slide">
-                  </div>
-                  <div class="carousel-item p-3">
-                    <img class="d-block w-50 mx-auto" src="img/portfolio/phonespecapp1.png" alt="Third slide">
-                  </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-6 col-sm-12">
-              <div class="porftolio-description">
-                <h5 class="porftolio-description-title">Overview</h5>
-                <p>RWeatherApp is a simple single page Progressive Web Application(PWA) that provides accurate and detailed weather forecast, available at any location or city in the world. The RWeatherApp is built with PWA methodology using AngularJS, JavaScript, HTML5, CSS3 and Bootstrap to deliver fast, engaging, and reliable mobile web experiences even when the user is offline or on an unreliable network.</p>
-                <ol>
-                  <li>Accurate, local and detailed weather data.</li>
-                  <li>5 day forecast with weather data for every 3 hours.</li>
-                  <li>Search weather information by city name.</li>
-                  <li>Graphical display of temperatures.</li>
-                </ol>
-
-                <div class="technologies">
-                  <h5 class="porftolio-description-title">Technologies Used</h5>
-                  <ul class="list-inline dev-icons">
-                    <li class="list-inline-item" data-toggle="tooltip" title="HTML5">
-                      <i class="fab fa-html5"></i>
-                    </li>
-                    <li class="list-inline-item" data-toggle="tooltip" title="CSS3">
-                      <i class="fab fa-css3-alt"></i>
-                    </li>
-                    <li class="list-inline-item" data-toggle="tooltip" title="JavaScript">
-                      <i class="fab fa-js-square"></i>
-                    </li>
-                    <li class="list-inline-item" data-toggle="tooltip" title="AngularJS">
-                      <i class="fab fa-angular"></i>
-                    </li>
-                    <li class="list-inline-item" data-toggle="tooltip" title="Bootstrap">
-                      <i class="fab fa-bootstrap"></i>
-                    </li>
-                    <li class="list-inline-item" data-toggle="tooltip" title="Less">
-                      <i class="fab fa-less"></i>
-                    </li>
-                    <li class="list-inline-item" data-toggle="tooltip" title="Heroku">
-                      <i class="icon-heroku"></i>
-                    </li>
-                    <li class="list-inline-item" data-toggle="tooltip" title="Git">
-                      <i class="fab fa-git"></i>
-                    </li>
-                    <li class="list-inline-item" data-toggle="tooltip" title="GitHub">
-                      <i class="fab fa-github"></i>
-                    </li>
-                    <li class="list-inline-item" data-toggle="tooltip" title="Grunt">
-                      <i class="fab fa-grunt"></i>
-                    </li>
-                    <li class="list-inline-item" data-toggle="tooltip" title="NPM">
-                      <i class="fab fa-npm"></i>
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="portfolio-urls">
-                  <h5 class="porftolio-description-title">URLs:</h5>
-                  <a href="https://rweatherapp.herokuapp.com" target="_blank">RWeatherApp Application</a><br>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Modals End -->
-
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -612,6 +330,4 @@
   <!-- Custom scripts for this template -->
   <script src="js/resume.js"></script>
 
-</body>
-
-</html>
+</body></html>
